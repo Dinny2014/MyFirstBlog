@@ -1,0 +1,31 @@
+
+ <div class='new_post'>
+    <div class='post'>
+      <form action='/posts/<%= @post.id %>' method='POST'>
+       
+
+        <div class='input-group title'>
+          <label>Title</label>
+          <input type='text' name='post[title]' value='<%= @post.title %>' placeholder=''>
+        </div>
+
+        <div class='input-group content'>
+          <label>Content</label>
+          <textarea name='post[content]' rows='20' id='editor'><%= @post.content %></textarea> 
+        </div>
+<div>
+<label>Status</label>
+<select name='post[status]'>
+<option value="draft" <% if @post.status == 'draft' %>selected<% end %> >draft</option>
+<option value="published" <% if @post.status == 'published' %>selected<% end %> >published</option>
+</select>
+
+
+</div>
+        <div class='input-group button'>
+          <button>Save</button>
+        </div>
+
+      </form>
+    </div>
+  </div>

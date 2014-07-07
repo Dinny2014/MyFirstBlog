@@ -1,0 +1,1 @@
+Post.create title: "blogpost1", content:"blAH blAH"

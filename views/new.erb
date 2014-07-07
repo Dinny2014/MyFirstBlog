@@ -1,0 +1,31 @@
+
+ <div class='new_post'>
+    <div class='post'>
+      <form action='/posts' method='POST'>
+       
+
+        <div class='input-group title'>
+          <label>Title</label>
+          <input type='text' name='title' value='' placeholder=''>
+        </div>
+
+        <div class='input-group content'>
+          <label>Content</label>
+          <textarea name='content' rows='20' id='editor'></textarea> 
+        </div>
+<div>
+<label>Status</label>
+<select name='status'>
+<option value="draft" selected>draft</option>
+<option value="published" >published</option>
+</select>
+
+
+</div>
+        <div class='input-group button'>
+          <button>Save</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
